@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion AI - 3. Tur: Farklı Tarz Font Alternatifleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace&family=Righteous&family=Russo+One&family=Share+Tech+Mono&family=Teko:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #050505;
+            --bg-card: #0d0d14;
+            --text-primary: #e8e8ef;
+            --text-secondary: #8a8a9a;
+            --accent-purple: #7c3aed;
+            --gradient-hero: linear-gradient(135deg, #7c3aed 0%, #6d28d9 30%, #4f46e5 60%, #3b82f6 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            padding: 40px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .font-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .font-card:hover {
+            border-color: rgba(124, 58, 237, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Font classes */
+        .f-audiowide {
+            font-family: 'Audiowide', sans-serif;
+        }
+
+        .f-righteous {
+            font-family: 'Righteous', sans-serif;
+        }
+
+        .f-sharetech {
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .f-teko {
+            font-family: 'Teko', sans-serif;
+        }
+
+        .f-russo {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .f-bruno {
+            font-family: 'Bruno Ace', sans-serif;
+        }
+
+        .name-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 12px;
+            background: rgba(124, 58, 237, 0.15);
+            color: #a78bfa;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            text-transform: uppercase;
+        }
+
+        .f-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin: 0 0 16px 0;
+            background: var(--gradient-hero);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .f-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+            margin: 0 0 24px 0;
+            max-width: 90%;
+        }
+
+        .f-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .f-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .f-btn.primary {
+            background: rgba(124, 58, 237, 0.15);
+            border-color: rgba(124, 58, 237, 0.3);
+            color: #c4b5fd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>ZION AI - 3. Tur: Radikal ve İlginç Fontlar</h1>
+    </div>
+
+    <div class="preview-grid">
+        <!-- Seçenek 1 -->
+        <div class="font-card f-audiowide">
+            <div class="name-tag">Audiowide (Synthwave/Oyun)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc">The Next Generation of Artificial Intelligence. Experience the future of seamless
+                automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+
+        <!-- Seçenek 2 -->
+        <div class="font-card f-sharetech">
+            <div class="name-tag">Share Tech Mono (Terminal)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc">The Next Generation of Artificial Intelligence. Experience the future of seamless
+                automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+
+        <!-- Seçenek 3 -->
+        <div class="font-card f-righteous">
+            <div class="name-tag">Righteous (Neon/Art Deco)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc">The Next Generation of Artificial Intelligence. Experience the future of seamless
+                automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+
+        <!-- Seçenek 4 -->
+        <div class="font-card f-teko">
+            <div class="name-tag">Teko (Dar & Endüstriyel)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc" style="font-size: 20px;">The Next Generation of Artificial Intelligence. Experience the
+                future of seamless automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+
+        <!-- Seçenek 5 -->
+        <div class="font-card f-bruno">
+            <div class="name-tag">Bruno Ace (Yarış/Kesik)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc">The Next Generation of Artificial Intelligence. Experience the future of seamless
+                automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+
+        <!-- Seçenek 6 -->
+        <div class="font-card f-russo">
+            <div class="name-tag">Russo One (Çok Kalın/Sanayi)</div>
+            <h2 class="f-title">ZION AI</h2>
+            <p class="f-desc">The Next Generation of Artificial Intelligence. Experience the future of seamless
+                automation and machine learning.</p>
+            <div class="f-buttons">
+                <div class="f-btn primary">Get Started</div>
+                <div class="f-btn">View Demo</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

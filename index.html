@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZION AI — Automate Your Business With Digital DNA</title>
+  <meta name="description"
+    content="Deploy intelligent AI agents for WhatsApp, Web, and Voice instantly. ZION AI — autonomous, bugless, and yours to command.">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∞</text></svg>">
+</head>
+
+<body>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">∞</span>
+      <span>ZION.AI</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li>
+        <a href="#" class="nav-dropdown">
+          AI Solutions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#">WhatsApp Agent</a>
+          <a href="#">Sales Consultant</a>
+          <a href="#">Voice AI Agent</a>
+          <a href="#">Custom Solutions</a>
+        </div>
+      </li>
+      <li><a href="#neural">Enterprise</a></li>
+      <li><a href="#trust">Research</a></li>
+      <li><a href="#contact">About</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="https://www.buglessdigital.com.tr/" target="_blank" rel="noopener noreferrer" class="nav-cta"
+        id="navCta">Bugless Digital</a>
+      <div class="mobile-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      ZION AI • Active
+    </div>
+
+    <h1>
+      <span class="line-1" id="heroLine1">Automate Your Business</span>
+      <span class="line-2" id="heroLine2">With Digital DNA</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Deploy intelligent agents for WhatsApp, Web, and Voice instantly. The future is autonomous, bugless, and yours to
+      command.
+    </p>
+
+    <!-- Zion Assistant Search -->
+    <div class="search-container">
+      <div class="search-bar">
+        <div class="search-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+            stroke-linejoin="round" style="width:32px;height:32px;">
+            <line x1="32" y1="18" x2="42" y2="6" />
+            <circle cx="42" cy="5" r="4" fill="none" />
+            <rect x="12" y="18" width="40" height="28" rx="8" />
+            <rect x="4" y="26" width="8" height="12" rx="3" />
+            <rect x="52" y="26" width="8" height="12" rx="3" />
+            <circle cx="24" cy="32" r="5" />
+            <circle cx="22.5" cy="30.5" r="1.5" fill="currentColor" stroke="none" />
+            <circle cx="40" cy="32" r="5" />
+            <circle cx="38.5" cy="30.5" r="1.5" fill="currentColor" stroke="none" />
+            <line x1="25" y1="41" x2="39" y2="41" />
+            <line x1="26" y1="50" x2="38" y2="50" />
+            <line x1="28" y1="54" x2="36" y2="54" />
+          </svg>
+        </div>
+        <input type="text" id="searchInput" placeholder="Ask Zion Assistant to build a bot...">
+        <button class="search-submit" aria-label="Submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <div class="search-tags">
+        <span class="search-tag"> Sales AI</span>
+        <span class="search-tag"> Customer Agent</span>
+        <span class="search-tag"> Email Bot</span>
+        <span class="search-tag"> Social AI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEURAL ARCHITECTURE (Use Cases) ===== -->
+  <section class="neural-section" id="neural">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Neural Architecture</h2>
+        <p class="section-subtitle">Select a protocol to deploy. Our agents integrate seamlessly into your existing
+          infrastructure.</p>
+      </div>
+      <div class="cards-grid">
+        <!-- Card 1: WhatsApp Agent -->
+        <div class="use-card fade-in fade-in-delay-1">
+          <div class="card-top-line"></div>
+          <div class="card-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </div>
+          <h3>WhatsApp Agent</h3>
+          <p>Automate 90% of customer queries directly on WhatsApp with human-like conversation flow.</p>
+          <div class="card-visual">
+            <div class="wp-chat" id="wpChat">
+              <div class="chat-header">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                  <div class="chat-name">Zion Agent</div>
+                  <div class="chat-status">Online</div>
+                </div>
+              </div>
+              <div class="chat-body" id="chatBody">
+                <div class="chat-bubble bot">Hi! How can I help you automate your business today?</div>
+                <div class="chat-bubble user">I need a bot for real estate leads.</div>
+                <div class="chat-bubble bot">Analyzing requirements... I can set that up in 12 minutes.</div>
+              </div>
+              <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                <button id="chatSendBtn" aria-label="Send Message">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Sales Consultant -->
+        <div class="use-card fade-in fade-in-delay-2">
+          <div class="card-top-line"></div>
+          <div class="card-icon purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3>Sales Consultant</h3>
+          <p>Web-based widget that qualifies leads and schedules appointments autonomously.</p>
+          <div class="card-visual">
+            <div class="sales-widget">
+              <div class="widget-bar">
+                <div class="widget-bar-dot"></div>
+                <div class="widget-bar-dot"></div>
+                <div class="widget-bar-dot"></div>
+              </div>
+              <div class="widget-content">
+                <div class="widget-popup">
+                  <div class="popup-title">🎯 Smart Offer Detected</div>
+                  <div class="popup-desc">Visitor shows high purchase intent</div>
+                </div>
+                <div class="widget-buttons">
+                  <div class="widget-btn secondary">Dismiss</div>
+                  <div class="widget-btn primary">Capture Lead</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Voice AI Agent -->
+        <div class="use-card fade-in fade-in-delay-3">
+          <div class="card-top-line"></div>
+          <div class="card-icon blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+            </svg>
+          </div>
+          <h3>Voice AI Agent</h3>
+          <p>Natural language voice processing for call centers and virtual receptionists.</p>
+          <div class="card-visual">
+            <div class="voice-visual">
+              <div class="waveform" id="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST / SOCIAL PROOF ===== -->
+  <section class="trust-section" id="trust">
+    <div class="section-container">
+      <div class="trust-label fade-in">Trusted by Industry Leaders</div>
+      <div class="trust-logos fade-in">
+        <div class="trust-logo">
+          <span class="logo-symbol">✦</span>
+          <span class="logo-name">UCANLAR</span>
+          <span class="trust-score">+40% Efficiency</span>
+        </div>
+        <div class="trust-logo">
+          <span class="logo-symbol">●</span>
+          <span class="logo-name">İÇEL</span>
+          <span class="trust-score">+35% Revenue</span>
+        </div>
+        <div class="trust-logo">
+          <span class="logo-symbol">⚡</span>
+          <span class="logo-name">VOLT</span>
+          <span class="trust-score">+52% Leads</span>
+        </div>
+        <div class="trust-logo">
+          <span class="logo-symbol">✻</span>
+          <span class="logo-name">NEXUS</span>
+          <span class="trust-score">+28% Conversion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / INITIALIZE PROTOCOL ===== -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-card fade-in">
+        <div class="contact-header">
+          <h2>Initialize Protocol</h2>
+          <p>Ready to upgrade your digital infrastructure? Start the conversation.</p>
+        </div>
+        <form id="contactForm" onsubmit="return false;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Identity</label>
+              <input type="text" class="form-input" placeholder="Full Name" id="formName">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Organizational Codex</label>
+              <input type="email" class="form-input" placeholder="name@company.com" id="formEmail">
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Sector</label>
+              <select class="form-input" id="formSector">
+                <option value="">WhatsApp Automation</option>
+                <option value="sales">Sales Intelligence</option>
+                <option value="voice">Voice AI</option>
+                <option value="custom">Custom Solution</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Transmission</label>
+              <textarea class="form-input" placeholder="Describe your automation needs..." id="formMessage"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">⚡ Launch Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">∞</span>
+          <span>ZION.AI</span>
+        </div>
+        <p>Architecting the future of digital intelligence. Autonomous, scalable, relentless.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Conversation AI</a></li>
+          <li><a href="#">Process Automation</a></li>
+          <li><a href="#">Voice Synthesis</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Manifesto</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Updated</h4>
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Enter email">
+          <button>Subscribe</button>
+        </div>
+        <ul style="margin-top: 20px;">
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      A <a href="#">Bugless Digital</a> Brand — 2026
+    </div>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
+
+</html>
